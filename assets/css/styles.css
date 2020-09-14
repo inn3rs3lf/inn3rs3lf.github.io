@@ -309,9 +309,20 @@ img{
   row-gap: 2rem;
 }
 .work__img{
+  display: flex;
+  flex-direction: column;
+  flex-basis: auto;
+  justify-content: space-between;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
   border-radius: .5rem;
+  padding: 0 5px 0 5px;
   overflow: hidden;
+  text-align: center;
+  
+}
+
+.stack_span {
+  border-bottom: 6px solid var(--first-color);
 }
 .work__img img{
   transition: 1s;
@@ -353,6 +364,11 @@ img{
   font-size: 2rem;
   margin-bottom: var(--mb-4);
 }
+
+.footer__email{
+  margin-bottom: var(--mb-4);
+}
+
 .footer__social{
   margin-bottom: var(--mb-4);
 }
